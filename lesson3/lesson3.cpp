@@ -1,17 +1,111 @@
 ﻿#include <iostream>
-
+#include <Windows.h>
 int main()
 {
-    int a = 54, b = 100, c= 10, d = 10;
-    if (a > b) {
-        std::cout << a;
-    }
-    else if (a == b && c == d) {
-        std::cout << a + b;
-    }
-    else {
-        std::cout << b;
-    }
+	SetConsoleCP(1251);
+	SetConsoleOutputCP(1251);
+	/*
+	std::cout << "Calculator\n";
+	int a, b;
+	char c;
+	std::cin >> a >> b >> c;
+
+	if (c == '+') {
+		std::cout << a + b << std::endl;
+	}
+	else if (c == '-') {
+		std::cout << a + b << std::endl;
+	}
+	else if (c == '*') {
+		std::cout << a * b << std::endl;
+	}
+	else if (c == '/' && b != 0) {
+		std::cout << a / b << std::endl;
+	}
+	else {
+		std::cout << "Error";
+	}
+
+	a = 1; b = 2;
+	int d = 58;
+	(d) ? std::cout << a : std::cout << b;
+	*/
+	
+	/*
+	int choise;
+	int count;
+	float price9x12 = 3.20, price10x15 = 5.40, sale = 0.95;
+	std::cout << "Выберете формат фотографии 1 - 9х12; 2- 10x15 -> ";
+	std::cin >> choise;
+	std::cout << "Количество, шт. -> ";
+	std::cin >> count;
+
+	if (choise == 1 && count > 10) {
+		std::cout << "Цена: 3.20 руб. Количество: " << count << std::endl;
+		std::cout << "Сумма: " << (price9x12 * count) << " Скидка: " << (price9x12 * count) - ((price9x12 * count) * sale) << std::endl;
+		std::cout << "К оплате: " << (price9x12 * count) * sale << std::endl;
+	}
+	else if (choise == 1 && count <= 10) {
+		std::cout << "Цена: 3.20 руб. Количество: " << count << std::endl;
+		std::cout << "Сумма: " << (price9x12 * count) << " Скидка: " << "Отсутсвует!" << std::endl;
+		std::cout << "К оплате: " << (price9x12 * count) << std::endl;
+	}
+	else if (choise == 2 && count > 10) {
+		std::cout << "Цена: 5.40 руб. Количество: " << count << std::endl;
+		std::cout << "Сумма: " << (price10x15 * count) << " Скидка: " << (price10x15 * count) - ((price10x15 * count) * sale) << std::endl;
+		std::cout << "К оплате: " << (price10x15 * count) * sale << std::endl;
+	}
+	else if (choise == 2 && count <= 10) {
+		std::cout << "Цена: 5.40 руб. Количество: " << count << std::endl;
+		std::cout << "Сумма: " << (price10x15 * count) << " Скидка: " << "Отсутсвует!" << std::endl;
+		std::cout << "К оплате: " << (price10x15 * count) << std::endl;
+	}
+	else {
+		std::cout << "Введены неправильные данные!" << std::endl;
+	}
+	*/
+
+	/*
+	int a = -99;
+	while(a != 0) {
+		std::cout << "Введите число, оно будет проверено на четность. Для выхода введите \"0\" -> ";
+		std::cin >> a;
+		
+		(a % 2 == 0) ? std::cout << "Число четное.\n" : std::cout << "Число не четное.\n";
+		
+		if (a % 2 == 0) {
+			std::cout << "Число четное." << std::endl;
+		}
+		else {
+			std::cout << "Число не четное." << std::endl;
+		}
+		
+	*/
+		
+	/*
+	float first = 1, second = 1;
+	while (first != 0 && second != 0) {
+		std::cout << "Для выхода укажите, что оба числа == 0\n";
+		std::cout << "Введите первое число -> ";
+		std::cin >> first;
+		std::cout << "Введите второе число -> ";
+		std::cin >> second;
+
+		(first >= second) ? std::cout << first << std::endl : std::cout << second << std::endl;
+	}
+	*/
+
+	float first, second, third;
+	std::cout << "Введите первое число -> ";
+	std::cin >> first;
+	std::cout << "Введите второе число -> ";
+	std::cin >> second;
+	std::cout << "Введите третье число -> ";
+	std::cin >> third;
+
+	if (first > second && first > third) std::cout << first;
+	else if (second > third) std::cout << second;
+	else std::cout << third;
 }
 
 
