@@ -95,6 +95,7 @@ int main()
 	}
 	*/
 
+	/*
 	float first, second, third;
 	std::cout << "Введите первое число -> ";
 	std::cin >> first;
@@ -106,6 +107,27 @@ int main()
 	if (first > second && first > third) std::cout << first;
 	else if (second > third) std::cout << second;
 	else std::cout << third;
+	*/
+
+	float first, second, third, fourth, fifth;
+	std::cout << "Введите первое число -> ";
+	std::cin >> first;
+	std::cout << "Введите второе число -> ";
+	std::cin >> second;
+	std::cout << "Введите третье число -> ";
+	std::cin >> third;
+	std::cout << "Введите четвертое число -> ";
+	std::cin >> fourth;
+	std::cout << "Введите пятое число -> ";
+	std::cin >> fifth;
+
+	if (first > second && first > third && first > fourth && first > fifth) std::cout << first;
+	else if (second > third && second > fourth && second > fifth) std::cout << second;
+	else if (third > fourth && third > fifth) std::cout << third;
+	else if (fourth > fifth) std::cout << fourth;
+	else std::cout << fifth;
+	
+	
 }
 
 
